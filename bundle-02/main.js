@@ -11,22 +11,22 @@
 
 
 // ESERCIZIO 1
-const myAge = 32;
-let message = '';
 function checkAge() {
+    const myAge = 32;
+    let message = '';
 
     if (myAge < 18) {
         message = `Sei troppo giovane! Hai ${myAge} anni!`;
     } else {
         message = 'Sei maggiorenne!';
     }
+    console.log(message);
 }
 checkAge();
-console.log(message);
 
 // 1- E' una funzione che si accerta che l'utente abbia un età uguale o maggiore di 18 anni.
 // 2- Non sono presenti errori di sintassi
-// 3- Le due variabili myAge e message vanno dichiarate fuori dalla funzione. Inoltre non viene affrontato il caso in cui myAge sia uguale a 18 per cui il messaggio 'hai più di 18 anni!' risulta errato
+// 3- Non viene affrontato il caso in cui myAge sia uguale a 18 per cui il messaggio 'hai più di 18 anni!' risulta errato
 /*******************************************************************************/
 
 // ESERCIZIO 2
@@ -43,13 +43,13 @@ printColorsNumber();
 
 
 // // ESERCIZIO 3
-// function addNumbers() {
-//     const userNumber = prompt('Inserisci un numero');
-//     const total = parseInt(userNumber)+ 12;
+function addNumbers() {
+    const userNumber = prompt('Inserisci un numero');
+    const total = parseInt(userNumber)+ 12;
 
-//     console.log(`Il risultato finale è ${total}`);
-// }
-// addNumbers();
+    console.log(`Il risultato finale è ${total}`);
+}
+addNumbers();
 
 // // 1- E' una funzione che somma al numero richiesto dall'utente, il numero 12 e stampa a console il risultato
 // // 2- Non sono presenti errori di sintassi
@@ -58,23 +58,23 @@ printColorsNumber();
 
 
 // // ESERCIZIO 4
-// function checkAccess() {
-//     let grantAccess = false;
-//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
-//     const userEmail = prompt('Inserisci il tuo indirizzo email');
+function checkAccess() {
+    let grantAccess = false;
+    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+    const userEmail = prompt('Inserisci il tuo indirizzo email');
 
 
-//     if (addresses.includes(userEmail)) {
-//         grantAccess = true;
-//     }
+    if (addresses.includes(userEmail)) {
+        grantAccess = true;
+    }
 
-//     if (grantAccess === true) {
-//         console.log('Accesso consentito!');
-//     } else {
-//         console.log('Accesso negato!');
-//     }
-// }
-// checkAccess();
+    if (grantAccess === true) {
+        console.log('Accesso consentito!');
+    } else {
+        console.log('Accesso negato!');
+    }
+}
+checkAccess();
 
 // // 1- E' una funzione che controlla che l'indirizzo mail inserito dall'utente sia contenuto nell'array "addresses". 
 // // 2- Sì, i valori booleani vanno senza virgolette
